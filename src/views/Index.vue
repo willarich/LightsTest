@@ -163,6 +163,18 @@
               >
             </div>
             <div class="md-layout-item">
+              <a href="#/lighttest" target="_blank">
+                <img
+                  :src="landing"
+                  alt="Rounded Image"
+                  class="img-raised rounded img-fluid"
+                />
+              </a>
+              <md-button href="#/lighttest" class="md-simple md-success md-lg"
+                >View Lights page</md-button
+              >
+            </div>
+            <div class="md-layout-item">
               <a href="#/profile" target="_blank">
                 <img
                   :src="profile"
