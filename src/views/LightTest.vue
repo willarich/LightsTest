@@ -10,28 +10,23 @@
           <div class="md-layout">
             <div class="md-layout-item md-size-50 mx-auto">
               <div class="lighttest">
-                <div class="avatar">
-                  <img
-                    :src="img"
-                    alt="Circle Image"
-                    class="img-raised rounded-circle img-fluid"
-                  />
-                </div>
                 <div class="name">
-                  <h3 class="title">Carla Hortensia</h3>
-                  <h6>Light Test</h6>
+                  <h3 class="title">Light Test</h3>
                 </div>
               </div>
             </div>
           </div>
-          <div class="description text-center">
-            <p>
-              An artist of considerable range, Chet Faker — the name taken by
-              Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-              and records all of his own music, giving it a warm, intimate feel
-              with a solid groove structure.
-            </p>
+          <div
+          class="md-layout-item md-size-25 md-xsmall-size-100 md-small-size-50 md-medium-size-25"
+        >
+          <div class="title">
+            <h3>Toggle Buttons</h3>
           </div>
+          <div class="flex-column">
+            <md-switch v-model="switch1">Toggle is on</md-switch>
+            <md-switch v-model="switch2">Toggle is off</md-switch>
+          </div>
+        </div>
           <div class="lighttest-tabs">
             <tabs
               :tab-name="['Studio', 'Work', 'Favorite']"
@@ -115,7 +110,9 @@ export default {
         { image: require("@/assets/img/examples/clem-onojeghuo.jpg") },
         { image: require("@/assets/img/examples/olu-eletu.jpg") },
         { image: require("@/assets/img/examples/studio-1.jpg") }
-      ]
+      ],
+      switch1: true,
+      switch2: null
     };
   },
   props: {

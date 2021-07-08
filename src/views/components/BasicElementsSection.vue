@@ -161,8 +161,8 @@
             <h3>Toggle Buttons</h3>
           </div>
           <div class="flex-column">
-            <md-switch v-model="switch1">Toogle is on</md-switch>
-            <md-switch v-model="switch2">Toogle is off</md-switch>
+            <md-switch v-model="switch1">Toggle is on</md-switch>
+            <md-switch v-model="switch2">Toggle is off</md-switch>
           </div>
         </div>
       </div>
